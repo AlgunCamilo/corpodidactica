@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORPODIDÁCTICA - Potencial Humano e Innovación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .bg-brand {
+            background-color: #82C91E;
+        }
+
+        .text-brand {
+            color: #82C91E;
+        }
+
+        .border-brand {
+            border-color: #82C91E;
+        }
+
+        /* Animación suave para el slider */
+        .slide {
+            display: none;
+            animation: fade 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-gray-800 font-sans relative">
+
+    <a href="#contacto-directo"
+        class="fixed bottom-8 right-8 z-[100] bg-brand text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center group">
+        <span
+            class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap font-bold px-0 group-hover:px-2">¡Inscríbete
+            Ya!</span>
+        <i class="fas fa-user-graduate text-2xl"></i>
+    </a>
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <img src="logcod.jpeg" alt="Logo Corpodidáctica" class="h-14 w-auto mr-3">
+                    <span class="font-bold text-xl tracking-tighter uppercase">Corpodidáctica</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6 font-medium text-sm">
+                    <a href="#inicio" class="hover:text-brand transition">Inicio</a>
+                    <a href="#galeria" class="hover:text-brand transition">Institución</a>
+                    <a href="#calendario" class="hover:text-brand transition">Calendario</a>
+                    <a href="#noticias" class="hover:text-brand transition">Noticias</a>
+                    <a href="#contacto-directo"
+                        class="bg-brand text-white px-4 py-2 rounded hover:bg-black transition font-bold shadow-md">SOLICITAR
+                        CUPO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="bg-white py-16 border-b">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <h1 class="text-5xl font-black text-gray-900 mb-6 uppercase leading-tight">Excelencia en <br><span
+                        class="text-brand">Formación Integral</span></h1>
+                <p class="text-gray-600 text-lg mb-8">Líderes en el desarrollo del potencial humano a través de
+                    metodologías didácticas de vanguardia.</p>
+                <div class="flex space-x-4">
+                    <a href="#noticias"
+                        class="bg-black text-white px-8 py-4 rounded font-bold hover:bg-brand transition shadow-lg">Blog
+                        de Actualidad</a>
+                    <a href="https://wa.me/573134680371"
+                        class="border-2 border-brand text-brand px-8 py-4 rounded font-bold hover:bg-brand hover:text-white transition inline-flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 mt-10 md:mt-0 relative" id="galeria">
+                <div class="bg-gray-100 p-4 rounded-3xl shadow-xl overflow-hidden relative h-[400px]">
+                    <div class="slide w-full h-full">
+                        <img src="pcjov.png" class="w-full h-full object-cover rounded-2xl" alt="Estudiantes Tech">
+                    </div>
+                    <div class="slide w-full h-full">
+                        <img src="bibljov.png" class="w-full h-full object-cover rounded-2xl" alt="Biblioteca">
+                    </div>
+                    <div class="slide w-full h-full">
+                        <img src="bibljov2.png" class="w-full h-full object-cover rounded-2xl"
+                            alt="Espacios de Estudio">
+                    </div>
+                    <div class="slide w-full h-full">
+                        <img src="logcod.jpeg" class="w-full h-full object-contain p-10 rounded-2xl"
+                            alt="Logo Corporativo">
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-2 mt-4">
+                    <span class="h-2 w-2 bg-brand rounded-full"></span>
+                    <span class="h-2 w-2 bg-gray-300 rounded-full"></span>
+                    <span class="h-2 w-2 bg-gray-300 rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendario" class="py-20 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold uppercase tracking-widest">Calendario Académico</h2>
+                <div class="h-1 w-20 bg-brand mx-auto mt-2"></div>
+            </div>
+            <div class="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200">
+                <table class="w-full text-left">
+                    <thead class="bg-black text-white">
+                        <tr>
+                            <th class="p-4 uppercase text-xs font-bold">Evento / Actividad</th>
+                            <th class="p-4 uppercase text-xs font-bold text-center">Fecha</th>
+                            <th class="p-4 uppercase text-xs font-bold text-right">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="p-4 font-semibold text-gray-700">Inicio de Semestre Educativo</td>
+                            <td class="p-4 text-gray-500 text-center">15 de Mayo, 2026</td>
+                            <td class="p-4 text-right"><span
+                                    class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">Abierto</span>
+                            </td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-4 font-semibold text-gray-700">Taller de Innovación Didáctica</td>
+                            <td class="p-4 text-gray-500 text-center">22 de Junio, 2026</td>
+                            <td class="p-4 text-right"><span
+                                    class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">Próximamente</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold uppercase">Novedades y Actualidad</h2>
+                    <p class="text-brand font-bold">Nuestro Blog Institucional</p>
+                </div>
+                <a href="#" class="text-sm font-bold border-b-2 border-brand pb-1 hover:text-brand transition">Ver todas
+                    las entradas</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article
+                    class="group cursor-pointer bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="pcjov.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                            alt="Blog 1">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-brand font-bold text-xs uppercase tracking-widest">Tendencias</span>
+                        <h3 class="text-xl font-bold mt-2 group-hover:text-brand transition">Impacto de la Tecnología en
+                            el Talento Humano</h3>
+                        <p class="text-gray-500 text-sm mt-3 leading-relaxed">Analizamos cómo las nuevas herramientas
+                            digitales potencian la creatividad educativa...</p>
+                    </div>
+                </article>
+
+                <article
+                    class="group cursor-pointer bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden bg-black flex items-center justify-center">
+                        <img src="logcod.jpeg" class="h-32 object-contain brightness-110" alt="Blog 2">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-brand font-bold text-xs uppercase tracking-widest">Institucional</span>
+                        <h3 class="text-xl font-bold mt-2 group-hover:text-brand transition">Alianzas 2026: Nuevos
+                            Horizontes Académicos</h3>
+                        <p class="text-gray-500 text-sm mt-3 leading-relaxed">Corpodidáctica firma convenios
+                            internacionales para pasantías profesionales...</p>
+                    </div>
+                </article>
+
+                <article
+                    class="group cursor-pointer bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="bibljov2.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                            alt="Blog 3">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-brand font-bold text-xs uppercase tracking-widest">Comunidad</span>
+                        <h3 class="text-xl font-bold mt-2 group-hover:text-brand transition">El rol de la lectura en la
+                            formación de líderes</h3>
+                        <p class="text-gray-500 text-sm mt-3 leading-relaxed">Nuestra renovada biblioteca se convierte
+                            en el epicentro del pensamiento crítico...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-directo" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-black uppercase mb-6">Forma parte de la <span class="text-brand italic">Nueva
+                        Generación</span></h2>
+                <p class="text-gray-400 mb-8">Déjanos tus datos para recibir información personalizada sobre nuestros
+                    programas, becas y fechas de admisión.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-brand/20 p-3 rounded-full text-brand"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <p class="font-bold">Ubicación Principal</p>
+                            <p class="text-gray-400 text-sm">Bogotá, Colombia - Carrera Educativa #123</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-brand/20 p-3 rounded-full text-brand"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <p class="font-bold">Atención Directa</p>
+                            <p class="text-gray-400 text-sm">+57 (313)468-0371 </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-brand/20 p-3 rounded-full text-brand"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="font-bold">Correo Institucional</p>
+                            <p class="text-gray-400 text-sm">admisiones@corpodidactica.edu.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-2xl text-gray-800">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="Nombre"
+                            class="w-full p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-brand">
+                        <input type="text" placeholder="Apellido"
+                            class="w-full p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-brand">
+                    </div>
+                    <input type="email" placeholder="Correo Electrónico"
+                        class="w-full p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-brand">
+                    <select
+                        class="w-full p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-brand text-gray-500">
+                        <option>Interés: Formación Integral</option>
+                        <option>Interés: Innovación Didáctica</option>
+                        <option>Interés: Otro programa</option>
+                    </select>
+                    <textarea placeholder="¿Cómo podemos ayudarte?" rows="4"
+                        class="w-full p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-brand"></textarea>
+                    <button
+                        class="w-full bg-brand text-white font-black py-4 rounded-lg shadow-lg hover:bg-black transition-all uppercase tracking-widest">Enviar
+                        Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center border-t border-gray-800 pt-10">
+            <img src="logcod.jpeg" alt="Logo" class="h-12 mb-6 brightness-0 invert opacity-50 mx-auto">
+            <div class="flex justify-center space-x-6 mb-8 text-xl">
+                <a href="#" class="hover:text-brand transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-brand transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-brand transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-600 text-xs tracking-widest uppercase font-bold">&copy; 2026 Corpodidáctica - Desarrollo
+                del Potencial Humano</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.querySelectorAll("#galeria span");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.replace("bg-brand", "bg-gray-300");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            if (dots[slideIndex - 1]) dots[slideIndex - 1].classList.replace("bg-gray-300", "bg-brand");
+            setTimeout(showSlides, 4000); // Cambia cada 4 segundos
+        }
+    </script>
+
+</body>
+
+</html>
